@@ -1,2 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Filename,Latency,Encoding,SampleCount,ErrorCount,Hostname,IdleTime,Connect
-1621632104765,94,CONSULTA_5_Posicoes,502,Proxy Error,LOAD 10VUs 1-4,text,false,,693,4340,10,10,https://ib3api-qab.internalenv.corp/api/bacenjud/v1.0/priority-rule-engine,,93,iso-8859-1,1,1,VDICOR1W14-23,0,38
