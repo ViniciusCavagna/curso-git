@@ -1,0 +1,101 @@
+Seguro Garantia:
+URL Base: api-insurconnect-cert.b3.com.br
+
+Autenticacao:
+--------------------------------------------------------------------------------------
+POST /seguros/api/oauth/token
+Geração de token para efetuar as transações
+--------------------------------------------------------------------------------------
+
+Seguros (/seguros):
+--------------------------------------------------------------------------------------
+POST /seguros/api/v1.0/apolices
+Cadastro de uma apolice
+
+POST /seguros/api/v1.0/apolices/{NUMERO_APOLICE}/endossos
+Cadastro de um endosso para uma apolice
+
+POST /seguros/api/v1.0/sinistros
+Cadastro de um sinistro em uma apolice
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/documentacoes
+???? Cadastro nova documentacao do sinistro
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/coberturas-afetadas
+???? Cadastro nova cobertura do sinistro
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/locais-ocorrencia
+???? Cadastro novo local de ocorrencia do sinistro
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/lancamentos
+???? Cadastro novo lancamento do sinistro
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/liquidacoes
+???? Cadastro liquidacao no sistro
+
+POST /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/liquidacoes-salvados-ressarcimentos
+???? Cadastro de ressarciemento sinistro
+
+POST /seguros/api/v1.0/apolices/{NUMERO_APOLICE}/movimentacoes
+???? Cadastro movimentacao da apolice
+
+PUT /seguros/api/v1.0/apolices/{NUMERO_APOLICE}/endossos/{NUMERO_ENDOSSO}
+???? Alteracao/correcao de endosso
+
+POST /seguros/api/v1.0/apolices/{NUMERO_APOLICE}/endossos/{NUMERO_ENDOSSO}/movimentacoes
+???? Cadastro de movimentacao de um endosso ligado a uma apolice
+
+PUT /seguros/api/v1.0/apolices/{NUMERO_APOLICE}
+Alteracao/correcao de uma apolice
+
+PUT /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}
+Alteracao/correcao de um sinistro
+
+PUT /seguros/api/v1.0/sinistros/{NUMERO_SINISTRO}/liquidacoes/{NUMERO_LIQUIDACAO}
+Alteracao/correcao de uma liquidacao ligada a um sinistro
+
+PUT /seguros/api/v1.0/sinistros/{NUMERO_APOLICE}/liquidacoes-salvados-ressarcimentos/{NUMERO_RESSSARCIMENTO}
+Alteracao/correcao do ressarcimento de uma liquidacao
+--------------------------------------------------------------------------------------
+
+Contra Garantia (/contragarantia):
+--------------------------------------------------------------------------------------
+POST /contragarantia/api/v1.0/contratos
+Cadastro de um novo contrato de contragarantia
+
+PUT /contragarantia/api/v1.0/contratos/{NUMERO_CONTRATO}
+Alteracao de um contrato de contragarantia
+
+PUT /contragarantia/api/v1.0/contratos/{NUMERO_CONTRATO}/vinculo
+Adicao de novas apolices para um contrato
+
+DELETE /contragarantia/api/v1.0/contratos/{NUMERO_CONTRATO}/vinculo
+Remocao de apolices de um contrato
+--------------------------------------------------------------------------------------
+
+Resseguros (/resseguros):
+--------------------------------------------------------------------------------------
+POST /resseguros/api/v1.0/contratos
+Cadastro de um contrato de resseguro
+
+POST /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}/movimentacoes-premio
+Cadastro de uma movimentacao de um contrato
+
+POST /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}/movimentacoes-recuperacao
+Cadastro de uma movimentacao de recuperacao de um contrato
+
+POST /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}
+Acao de vinculo/desvinculo de contrato de resseguro
+
+PUT /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}
+Alteracao/correcao de contrato de resseguro
+
+PUT /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}/movimentacoes-premio/{NUMERO_MOVIMENTO}
+Alteracao/correcao movimento premio a um contrato
+
+PUT /resseguros/api/v1.0/contratos/{NUMERO_CONTRATO}/movimentacoes-recuperacao/{NUMERO_MOVIMENTO}
+Alteracao/correcao movimento de recuperacao a um contrato
+--------------------------------------------------------------------------------------
+
+
+
